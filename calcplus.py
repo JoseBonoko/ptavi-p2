@@ -5,8 +5,8 @@ import sys
 import calcoohija
 
 if __name__ == "__main__":
-    fich = open(sys.argv[1], 'r', encoding = 'utf-8')
-    calc =  calcoohija.CalculadoraHija()
+    fich = open(sys.argv[1], 'r', encoding='utf-8')
+    calc = calcoohija.CalculadoraHija()
     lineas = fich.readlines()
     for linea in lineas:
         elementos = linea.split(',')
@@ -41,4 +41,4 @@ if __name__ == "__main__":
                     resultdivision = calc.divide(resultdivision, elemento)
             print(resultdivision)
         else:
-            sys.exit('Operación sólo puede ser sumar, restar, multiplicar o dividir')
+            sys.exit('Sólo se puede sumar, restar, multiplicar o dividir')
