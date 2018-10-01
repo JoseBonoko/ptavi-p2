@@ -6,6 +6,7 @@ import calcoo
 
 calc = calcoo.Calculadora
 
+
 class CalculadoraHija(calc):
     def multi(self, op1, op2):
         return op1 * op2
@@ -15,6 +16,7 @@ class CalculadoraHija(calc):
             return("Division by zero is not allowed")
         else:
             return op1 / op2
+
 
 if __name__ == "__main__":
     calchija = CalculadoraHija()
@@ -33,6 +35,6 @@ if __name__ == "__main__":
     elif sys.argv[2] == "divide":
         result = calchija.divide(operando1, operando2)
     else:
-        sys.exit('Operación sólo puede ser sumar, restar, multiplicar o dividir')
+        sys.exit('Sólo se puede sumar, restar, multiplicar o dividir')
 
     print(result)
