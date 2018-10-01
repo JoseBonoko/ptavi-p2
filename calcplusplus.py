@@ -37,15 +37,15 @@ if __name__ == "__main__":
                 print(linea)
                 print(resultmulti)
             elif elementos[0] == "divide":
-                resultdivision = elementos[1]
+                resultdivis = elementos[1]
                 for elemento in elementos[2:]:
-                    resultdivision = int(resultdivision)
+                    resultdivis = int(resultdivis)
                     elemento = int(elemento)
-                    if resultdivision == 0 or elemento == 0:
+                    if resultdivis == 0 or elemento == 0:
                         sys.exit("Division by zero is not allowed")
                     else:
-                        resultdivision = calcul.divide(resultdivision, elemento)
+                        resultdivis = calcul.divide(resultdivis, elemento)
                 print(linea)
-                print(resultdivision)
+                print(resultdivis)
             else:
                 sys.exit('Sólo se puede sumar, restar, multiplicar o dividir')
